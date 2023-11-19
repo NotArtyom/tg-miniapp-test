@@ -29,12 +29,12 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-        {/* Here we add our button with alert callback */}
-        {/*<div className="card">*/}
-        {/*    <button onClick={() => WebApp.showAlert(`Hello World! Current count is ${count}`)}>*/}
-        {/*        Show Alert*/}
-        {/*    </button>*/}
-        {/*</div>*/}
+         Here we add our button with alert callback
+        <div className="card">
+            <button onClick={() => WebApp.showAlert(`Hello World! Current count is ${count}`)}>
+                Show Alert
+            </button>
+        </div>
     </>
   )
 }
