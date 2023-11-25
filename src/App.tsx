@@ -3,12 +3,13 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import WebApp from "@twa-dev/sdk";
+import {TonConnectUIProvider} from "@tonconnect/ui-react";
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
+      <TonConnectUIProvider manifestUrl="https://<YOUR_APP_URL>/tonconnect-manifest.json">
       <div>
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -35,7 +36,7 @@ function App() {
                 Show Alert
             </button>
         </div>
-    </>
+      </TonConnectUIProvider>
   )
 }
 
