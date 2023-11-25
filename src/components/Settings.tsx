@@ -11,7 +11,7 @@ const transaction = {
 }
 
 export const Settings = () => {
-    const [tonConnectUI, setOptions] = useTonConnectUI();
+    const [tonConnectUI, _] = useTonConnectUI();
 
     return (
         <div>

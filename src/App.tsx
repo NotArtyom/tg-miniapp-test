@@ -9,7 +9,7 @@ import {Address} from "./components/Address";
 import {Settings} from "./components/Settings";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, _] = useState(0)
 
   return (
       <TonConnectUIProvider manifestUrl="https://notartyom.github.io/tg-miniapp-test/manifest.json">
